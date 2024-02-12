@@ -12,6 +12,12 @@ First of all, that program does not check the input string so instead of ip addr
 
 ### Q3
 
-The first problem can be solved by adding few lines checking if the given string is indeed an ip address. For the second one, we can replace shell=True by shell=False and replace the command string by a list of string (something like ["ping", "-c", "4", "{target}"])
+The first problem can be solved by adding few lines checking if the given string is indeed an ip address. For the second one, we can replace shell=True by shell=False and replace the command string by a list of string (something like ["ping", "-c", "4", "{target}"]).
 
 ### Q4
+
+I add a function validate_ip_address() that check if the given input matches an ipv4 or ipv6 ip address, if not the command is not executed.
+
+### Q5
+
+To be sure that it is efficient I can test my code with different commands, or ask people specialized in hacking to test it (that is when we are happy to have white hats hackers)
